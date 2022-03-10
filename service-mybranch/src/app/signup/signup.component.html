@@ -1,0 +1,43 @@
+<section class="form-02-main">
+  <div
+    class="container-fluid d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div class="card" data-aos="zoom-in-up">
+      <div class="card-body">
+        <div class="logo">
+          <img src="assets/images/user.png" alt="user" />
+        </div>
+        <h1 class="loginTitle">Register</h1>
+        <form [formGroup]="form" (ngSubmit)="signup()">
+          <!--Email field-->
+          <app-icon-input [control]="$any(form.get('email'))"> </app-icon-input>
+
+          <!--Password field-->
+          <app-icon-input [control]="$any(form.get('password'))">
+          </app-icon-input>
+
+          <!--register button-->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-primary logbut"
+              [disabled]="!form.valid"
+            >
+              <span
+                *ngIf="isLoading"
+                class="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              <span *ngIf="!isLoading"
+                ><i class="bi bi-box-arrow-in-right"></i
+              ></span>
+              {{ isLoading ? "Registering..." : "Register" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

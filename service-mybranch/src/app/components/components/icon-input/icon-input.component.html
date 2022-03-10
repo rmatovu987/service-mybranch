@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label [for]="control.name" class="form-label mb-0">
+      {{ control.label }}
+    </label>
+    <div
+      class="form-control"
+      [class]="{ 'is-invalid': control.errorMessages?.length! > 0 }"
+    >
+    <span><i *ngIf="control.icon" [class]="control.icon"></i></span>
+      <input
+        [type]="control.type"
+        [name]="control.name"
+        [formControl]="control"
+        [placeholder]="control.placeholder"
+        autocomplete="off"
+      />
+    </div>
+    <div class="invalid-feedback d-flex" *ngFor="let error of control.errorMessages">
+      {{ error }}
+    </div>
+  </div>

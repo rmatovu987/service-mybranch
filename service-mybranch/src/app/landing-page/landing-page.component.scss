@@ -1,0 +1,27 @@
+.home {
+	background: #0b5ed7;
+	background-repeat-y: no-repeat;
+	background-position: 0 -50px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media (max-width: 991px) {
+		padding-top: 71px;
+	}
+}
+
+.main-banner {
+	color: #fff;
+	background-size: cover;
+	@media (max-width: 991px) {
+		padding: 1rem;
+		margin-bottom: 50px;
+	}
+	.banner-title {
+		width: 56%;
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+	}
+}

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+//bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//customss
+@import "assets/scss/styles";
+
+//font-family
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+body {
+    font-family: 'Nunito', 'Roboto','sans-serif';
+}

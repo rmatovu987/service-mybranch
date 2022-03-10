@@ -1,0 +1,11 @@
+<div class="form-check mt-1">
+  <input
+    class="form-check-input"
+    type="checkbox"
+    value=""
+    [formControl]="$any(control)"
+  />
+  <label class="form-check-label" for="flexCheckDefault">
+    {{ control.label }}
+  </label>
+</div>

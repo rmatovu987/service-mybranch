@@ -1,0 +1,73 @@
+<section class="form-02-main">
+  <div
+    class="container-fluid d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div class="card" data-aos="zoom-in-up">
+      <div class="card-body">
+        <div class="logo">
+          <img src="assets/images/user.png" alt="user" />
+        </div>
+        <h1 class="loginTitle">Login</h1>
+        <form [formGroup]="form" (ngSubmit)="login()">
+          <!--Email field-->
+          <app-icon-input [control]="$any(form.get('email'))"> </app-icon-input>
+
+          <!--Password field-->
+          <app-icon-input [control]="$any(form.get('password'))">
+          </app-icon-input>
+
+          <div
+            class="mb-2 mt-0 d-flex justify-content-between align-items-center"
+          >
+            <!--Remember me field-->
+            <app-checkbox
+              [control]="$any(form.get('rememberMe'))"
+              [label]="'Remember Me'"
+            ></app-checkbox>
+
+            <!--Forgot password-->
+            <a
+              style="cursor: pointer; text-decoration: none"
+              >Forgot Password?</a
+            >
+          </div>
+
+          <!--login button-->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-primary logbut"
+              [disabled]="!form.valid"
+            >
+              <span
+                *ngIf="isLoading"
+                class="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              <span *ngIf="!isLoading"
+                ><i class="bi bi-box-arrow-in-right"></i
+              ></span>
+              {{ isLoading ? "Logging in..." : "Login" }}
+            </button>
+          </div>
+        </form>
+
+        <div class="form-group text-center"><p>-----Or Login With-----</p></div>
+
+        <div class="form-group pt-0">
+          <div class="_social_04">
+            <ol>
+              <li><i class="bi bi-facebook"></i></li>
+              <li><i class="bi bi-twitter"></i></li>
+              <li><i class="bi bi-google"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="bi bi-linkedin"></i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

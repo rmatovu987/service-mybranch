@@ -3,20 +3,38 @@
 which all other classes will inherit
 '''
 import models
-from uuid import uuid4
+import os
+from uuid import uuid4, UUID
 from datetime import datetime, time
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import *
+
+STORAGE_TYPE = os.environ.get('S@MB_TYPE_STORAGE')
+'''create instance of Base if storage type is a database
+   if not a database storage use Base class
+'''
+if STORAGE_TYPE == "db":
+    Base = declarative_base()
+else:
+    class Base:
+        pass
 
 class BaseModel:
-    ''' Represents base class '''
+    ''' Represents BaseModel class '''
+    if STORAGE_TYPE == "db":
+        id = Column(Stirng(60), nullabel=False, Primary_key=True)
+        creation = Column(DateTime, nullable=False, default=datetime.utcnow())
+        update = Column(DateTime, nullable=False, default=datetime.utcnow())
+        
     def __init__(self, *args, **kwargs):
         ''' initializes base class
         Args
            *arg (any)
            **kwargs(dict): key-value pairs
         '''
-        self.id = str(uuid.uuid())
+        self.id = str(uuid.uuid4())
         self.creation = datetime.today()
-        self.update = dateitm.today()
+        self.update = self.creation
         tform = "%Y-%m-%dT%H:%M:%S.%f"
 
         if len(kwargs) != 0:
@@ -34,8 +52,9 @@ class BaseModel:
         return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
 
     def save(self):
-        '''update current time'''
-        self.update = datetime.today()
+        '''change update attribute to current time'''
+        self.update = datetime.now()
+        models.storage.new(self)
         models.storage.save()
 
     def to_dict(self):
@@ -45,3 +64,7 @@ class BaseModel:
         my_dict['update'] = self.update.isoformat()
         my_dict['__class__'] = self.__class__.__name__
         return my_dict
+
+    def delete(self):
+        ''' delete current instance from storage '''
+        models.storage.delete(self)

@@ -115,7 +115,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://rmatovu987.github.io/service-mybranch/",
+            "name": "rmatovu987",
+            "email": "rmatovu987@gmail.com"
+          }
         }
       }
     }

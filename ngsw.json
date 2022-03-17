@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1647448425063,
+  "timestamp": 1647502619836,
   "index": "https://rmatovu987.github.io/service-mybranch/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://rmatovu987.github.io/service-mybranch/favicon.ico",
         "https://rmatovu987.github.io/service-mybranch/index.html",
-        "https://rmatovu987.github.io/service-mybranch/main.2efa65ea431ebfbb.js",
+        "https://rmatovu987.github.io/service-mybranch/main.479e56683d938eae.js",
         "https://rmatovu987.github.io/service-mybranch/manifest.webmanifest",
         "https://rmatovu987.github.io/service-mybranch/polyfills.fd823f1976292539.js",
         "https://rmatovu987.github.io/service-mybranch/runtime.8ec5e19d9e7c6e93.js",
@@ -30,6 +30,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://rmatovu987.github.io/service-mybranch/about-bg.12699b5825a38e80.webp",
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-128x128.png",
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-144x144.png",
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-152x152.png",
@@ -38,10 +39,12 @@
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-512x512.png",
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-72x72.png",
         "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-96x96.png",
+        "https://rmatovu987.github.io/service-mybranch/assets/images/about-bg.webp",
         "https://rmatovu987.github.io/service-mybranch/assets/images/cust.png",
-        "https://rmatovu987.github.io/service-mybranch/assets/images/group.png",
         "https://rmatovu987.github.io/service-mybranch/assets/images/hand.png",
+        "https://rmatovu987.github.io/service-mybranch/assets/images/media.jpg",
         "https://rmatovu987.github.io/service-mybranch/assets/images/review.jpg",
+        "https://rmatovu987.github.io/service-mybranch/assets/images/rich.png",
         "https://rmatovu987.github.io/service-mybranch/assets/images/sat.jpg",
         "https://rmatovu987.github.io/service-mybranch/assets/images/share.png",
         "https://rmatovu987.github.io/service-mybranch/assets/images/user.png",
@@ -58,6 +61,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://rmatovu987.github.io/service-mybranch/about-bg.12699b5825a38e80.webp": "cded463e190a0e73c01f6c8a81c76c03c29990b6",
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -66,10 +70,12 @@
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://rmatovu987.github.io/service-mybranch/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://rmatovu987.github.io/service-mybranch/assets/images/about-bg.webp": "cded463e190a0e73c01f6c8a81c76c03c29990b6",
     "https://rmatovu987.github.io/service-mybranch/assets/images/cust.png": "fc645b5356cbab4cb91df7dbdc6a2082e91cb777",
-    "https://rmatovu987.github.io/service-mybranch/assets/images/group.png": "364e8680f159466f13e53baa5952fc24067b8170",
     "https://rmatovu987.github.io/service-mybranch/assets/images/hand.png": "3a95adcd1162aa9d19ca6da5d081f2dae528b4a9",
+    "https://rmatovu987.github.io/service-mybranch/assets/images/media.jpg": "2327a57ac2777c9f6d087aa6ea4254def8d7cac3",
     "https://rmatovu987.github.io/service-mybranch/assets/images/review.jpg": "65ee801e9246e81f09190a7b44f42984b8381754",
+    "https://rmatovu987.github.io/service-mybranch/assets/images/rich.png": "ba709e0a1636a4c71d88b09ee23c3e8cf7100138",
     "https://rmatovu987.github.io/service-mybranch/assets/images/sat.jpg": "ce20c4cf0629e65622424c345dd05eb106f66347",
     "https://rmatovu987.github.io/service-mybranch/assets/images/share.png": "e254a4db41bf7091550bbc38898c9750e2ce173c",
     "https://rmatovu987.github.io/service-mybranch/assets/images/user.png": "aadd18bf02aeb299506a9846cceab10f55c1b489",
@@ -81,8 +87,8 @@
     "https://rmatovu987.github.io/service-mybranch/bootstrap-icons.51e2826a5e883791.woff": "36952dbeb50a08a17d0dba69fa9cccde990ed10d",
     "https://rmatovu987.github.io/service-mybranch/bootstrap-icons.988b20fa812f3498.woff2": "1ca5e8c7d2fb8e9d60ad1a1feb2a46e98c248a3d",
     "https://rmatovu987.github.io/service-mybranch/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://rmatovu987.github.io/service-mybranch/index.html": "336c5c588e78f78e6476924905911ee974112d9c",
-    "https://rmatovu987.github.io/service-mybranch/main.2efa65ea431ebfbb.js": "ff7492a5e90261c4e0a76030a7f08d143136962a",
+    "https://rmatovu987.github.io/service-mybranch/index.html": "3e67e61ee29eca923d8a823f585715048268a454",
+    "https://rmatovu987.github.io/service-mybranch/main.479e56683d938eae.js": "0467ccbc7f03617843cbc64677c144622750f06b",
     "https://rmatovu987.github.io/service-mybranch/manifest.webmanifest": "369611fb6da5777f06fe2d0cf7e0da0974ff5f6c",
     "https://rmatovu987.github.io/service-mybranch/polyfills.fd823f1976292539.js": "b27fc1264eb990ce5dd9402d79bbf16f0677e8d3",
     "https://rmatovu987.github.io/service-mybranch/runtime.8ec5e19d9e7c6e93.js": "052b05aa0d46839b8c16f3f16bc7786e6e0d6794",

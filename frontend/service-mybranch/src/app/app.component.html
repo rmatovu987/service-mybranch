@@ -1,27 +1,65 @@
 <!--Header-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
   <div class="container">
-    <a class="navbar-brand" style="cursor: pointer;">
-      <img id="logo" src="assets/images/hand.png" alt="logo" width="50px">
+    <a class="navbar-brand" style="cursor: pointer">
+      <img id="logo" src="assets/images/hand.png" alt="logo" width="50px" />
       Service@MyBranch
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/app']" routerLinkActive="active"  style="cursor: pointer;">Home</a>
+          <a
+            class="nav-link"
+            [routerLink]="['']"
+            routerLinkActive="active"
+            fragment="home"
+            style="cursor: pointer"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active" style="cursor: pointer;">Login</a>
+          <a
+            class="nav-link"
+            [routerLink]="['']"
+            routerLinkActive="active"
+            fragment="about"
+            style="cursor: pointer"
+            >About</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/signup']" routerLinkActive="active" style="cursor: pointer;">Sign Up</a>
-        </li>        
+          <a
+            class="nav-link"
+            [routerLink]="['/login']"
+            routerLinkActive="active"
+            style="cursor: pointer"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/signup']"
+            routerLinkActive="active"
+            style="cursor: pointer"
+            >Sign Up</a
+          >
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<router-outlet style="padding-top: 1em;"></router-outlet>
+<router-outlet style="padding-top: 1em"></router-outlet>
+

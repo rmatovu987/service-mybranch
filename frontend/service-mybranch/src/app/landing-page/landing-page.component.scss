@@ -19,11 +19,41 @@
   }
 }
 
+.change {
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
+}
+
 .sect {
-  padding: 10em;
+  padding: 7em;
   @media (max-width: 991px) {
     padding: 1em;
   }
+}
+
+.cd{
+  border: solid 1px rgb(211, 207, 207);
+  border-radius: 5px;
+}
+
+.sect1 {
+  padding: 5em;
+  background: url("../../assets/images/about-bg.webp") top center no-repeat;
+  position: relative;
+  @media (max-width: 991px) {
+    padding: 1em;
+  }
+}
+
+.sect1:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .sub-banner {
@@ -39,4 +69,47 @@
       width: 100%;
     }
   }
+}
+
+.social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a{
+    text-decoration: none;
+  }
+}
+
+.social i {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #ecf6fe;
+  color: #0665b7;
+}
+
+.social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.social i:hover {
+  background: #0b5ed7;
+  color: #fff;
+}
+
+.social i+i {
+  margin-left: 8px;
+}
+
+
+footer {
+  background: #0b5ed7;
+  padding: 30px 0 30px 0;
+  color: #fff;
 }

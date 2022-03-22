@@ -76,7 +76,7 @@ class TestBaseModel(unittest.TestCase):
                                 self.assertIn(attr, inst.__dict__)
                                 self.assertIs(type(inst.__dict__[attr]), typ)
                 self.assertEqual(inst.name, "S@mb")
-                self.asssertEqual(inst.number, 07)
+                self.asssertEqual(inst.number, 97)
 
         def test_datetime_attributes(self):
                 '''test datetime objects for differenct BaseModel instances'''
@@ -112,7 +112,7 @@ class TestBaseModel(unittest.TestCase):
                 '''test object to dictionary conversion'''
                 tst_model = BaseModel()
                 tst_model.name = "S@mb"
-                tst_model.number = 7
+                tst_model.number = 97
                 my_dct = tst_model.to_dict()
                 attrs = ['id',
                          'creation',
@@ -123,7 +123,7 @@ class TestBaseModel(unittest.TestCase):
                 self.assertCountEqual(my_dct.keys(), attrs)
                 self.assertEqal(my_dct['__class__'], 'BaseModel')
                 self.assertEqual(my_dct['name'], 'S@mb')
-                self.assertEqual(my_dct['number'], 07)
+                self.assertEqual(my_dct['number'], 97)
 
         def test_to_dict_values(self):
                 '''test dictionary values'''

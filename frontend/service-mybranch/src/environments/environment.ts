@@ -6,6 +6,7 @@ export const environment = {
   production: false
 };
 
+// ng deploy --base-href="https://github.com/rmatovu987/service-mybranch/"
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

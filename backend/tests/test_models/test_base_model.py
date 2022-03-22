@@ -63,11 +63,11 @@ class TestBaseModel(unittest.TestCase):
                 inst = BaseModel()
                 self.assertIs(type(inst), BaseModel)
                 inst.name = 'S@mb'
-                inst.number = 07
+                inst.number = 97
                 attrs_types = {
                         "id": str,
                         "creation": datetime,
-                        "updated": datetime,
+                        "update": datetime,
                         "name": str,
                         "number": int
                 }
@@ -89,10 +89,10 @@ class TestBaseModel(unittest.TestCase):
                 inst2 = BaseModel()
                 objtime = datetime.now()
                 self.assertTrue(instime <= inst2.creation <= objtime)
-                self.assertEqual(inst1.creation, inst1.updated)
-                self.assertEqual(inst2.creation, inst2.updated)
+                self.assertEqual(inst1.creation, inst1.update)
+                self.assertEqual(inst2.creation, inst2.update)
                 self.assertNotEqual(inst1.creation, inst2.creation)
-                self.assertNotEqual(inst1.updated, inst2.updated)
+                self.assertNotEqual(inst1.update, inst2.update)
 
         def test_uuid(self):
                 '''test that id is valid uuid '''
@@ -112,7 +112,7 @@ class TestBaseModel(unittest.TestCase):
                 '''test object to dictionary conversion'''
                 tst_model = BaseModel()
                 tst_model.name = "S@mb"
-                tst_model.number = 07
+                tst_model.number = 7
                 my_dct = tst_model.to_dict()
                 attrs = ['id',
                          'creation',

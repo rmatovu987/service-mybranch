@@ -46,22 +46,22 @@ These include:
 * `def delete(self)` - delete current instance from storage
 
 Classes that inherit from Base Model:
-[bank.py](/models/bank.py) - defines the bank class
-[branch.py](/models/branch.py) - defines the bank branch class
-[review.py](/models/review.py) - defines the review class
-[user.py](/models/user.py) - defines the user class
+* [bank.py](backend/models/bank.py) - defines the bank class
+* [branch.py](backend/models/branch.py) - defines the bank branch class
+* [review.py](backend/models/review.py) - defines the review class
+* [user.py](backend/models/user.py) - defines the user class
 
 #### `backend/models/engine` directory contains File Storage class that handles JASON serialization and deserialization:
-[file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
-[db_storage.py](/models/engine/db_storage.py) - defines the database storage engine
+* [file_storage.py](backend/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
+* [db_storage.py](backend/models/engine/db_storage.py) - defines the database storage engine
 
 ### `backend/models/tests`
 #### `tests/test_models` - a directory for each model's unittests
-[test_base_model.py](tests/test_models/test_base_model.py) - unittests for the BaseModel
-[test_bank.py](tests/test_models/test_bank.py) - unittests for the bank model
-[test_branch.py](tests/test_models/test_branch.py) - unittests for the branch model
-[test_review.py](tests/test_models/test_review.py) - unittests for the review model
-[test_user.py](tests/test_models/test_user.py) - unittests for the user model
+* [test_base_model.py](backend/tests/test_models/test_base_model.py) - unittests for the BaseModel
+* [test_bank.py](backend/tests/test_models/test_bank.py) - unittests for the bank model
+* [test_branch.py](backend/tests/test_models/test_branch.py) - unittests for the branch model
+* [test_review.py](backend/tests/test_models/test_review.py) - unittests for the review model
+* [test_user.py](backend/tests/test_models/test_user.py) - unittests for the user model
 
 #### `tests/test_engine` - unittests for the storage engine
 

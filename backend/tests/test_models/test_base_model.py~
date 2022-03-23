@@ -1,6 +1,0 @@
-#!/usr/bin/python3
-'''Defines Unittests for BaseModel
-unittest classes:
-            TestDocs: tests for proper documentation throughout the module
-            TestBaseModel: tests for code functionality of BaseModel
-'''

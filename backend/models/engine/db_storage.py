@@ -13,7 +13,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 name2class = {
     'Bank': Bank,
-    'Branch': State,
+    'Branch': Branch,
     'Review': Review,
     'User': User
 }
@@ -45,7 +45,7 @@ class DBStorage:
         if cls:
             for obj in self.__session.query(cls):
                 objects[obj.__class__.__name__ + '.' + obj.id] = obj
-            else:
+        else:
             for cls in name2class.values():
                 for obj in self.__session.query(cls):
                     objects[obj.__class__.__name__ + '.' + obj.id] = obj

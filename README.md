@@ -6,7 +6,8 @@
 * [Introduction](#introduction)
 * [Installation](#installation) 
 * [File Descriptions](#file-descriptions)
-* [Usage](#usage)                                                                                                                    * [Contributors](#conributors)
+* [Usage](#usage)
+* [Contributors](#contributors)
 * [License](#license)
 
 ## Introduction
@@ -33,6 +34,24 @@ ng serve
 ## File Descriptions
 #### `backend/` directory contains all backend features of the project.
 These include `models/`, `tests/` and the storage `engine/`
+### `backend/models` This directory contains the model classes used in this project.
+[base_model.py](backend/models/base_model.py) - The BaseModel class from which all other classes are derived
+* `def __init__(self, *args, **kwargs)` - Initialization of the base model
+* `def __str__(self)` - String representation of the BaseModel class
+* `def save(self)` - Updates the attribute `update` with the current datetime 
+* `def to_dict(self)` - returns a dictionary representation of the instance
+* `def delete(self)` - delete current instance from storage
+
+Classes that inherit from Base Model:
+* [bank.py](/models/bank.py) - defines the bank class
+* [branch.py](/models/branch.py) - defines the branch class
+* [review.py](/models/review.py) - defines the review class
+* [user.py](/models/user.py) - defines the user class
+
+#### `backend/models/engine` directory contains File Storage class that handles JASON serialization and deserialization:
+[file_storage.py](/models/engine/file_storage.py) - serializes instances to a JSON file & deserializes back to instances
+[db_storage.py](/models/engine/db_storage.py) - defines the database storage engine
+
 ## Usage
 
 ## Contributors

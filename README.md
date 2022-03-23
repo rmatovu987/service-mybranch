@@ -2,6 +2,13 @@
 
 # Service@MyBranch
 
+## Table of Contents
+* [Introduction](#introduction)
+* [Installation](#installation) 
+* [File Descriptions](#file-descriptions)
+* [Usage](#usage)                                                                                                                    * [Contributors](#conributors)
+* [License](#license)
+
 ## Introduction
 
 This is a project that offers customers of a bank the platform to express their
@@ -23,9 +30,12 @@ This will install all the required node modules. Afterwards, run
 ng serve
 ```
 
+## File Descriptions
+#### `backend/` directory contains all backend features of the project.
+These include `models/`, `tests/` and the storage `engine/`
 ## Usage
 
-## Contributing
+## Contributors
 
 This project is an effort of:
     - [Richard Matovu](https://github.com/rmatovu987)

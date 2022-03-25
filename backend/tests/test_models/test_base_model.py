@@ -15,6 +15,8 @@ import unittest
 from unittest import mock
 import os
 import inspect
+import uuid
+from uuid import UUID, uuid4
 
 BaseModel = models.base_model.BaseModel
 module_doc = models.base_model.__doc__
@@ -25,7 +27,7 @@ class TestModelDocs(unittest.TestCase):
         @classmethod
         def setUpClass(self):
                 ''' docstrings tests set up '''
-                self.base_funcs = inspect.getmember(BaseModel, inspect.isfunction)
+                self.base_funcs = inspect.getmembers(BaseModel, inspect.isfunction)
 
         def test_valid_pep8(self):
                 ''' tests that the model follows pep8 style '''
@@ -145,7 +147,7 @@ class TestBaseModel(unittest.TestCase):
         @mock.patch('models.storage')
         def test_save(self):
                 ''' test update of update attribute and storage.save call'''
-                 bm = BaseModel()
+                bm = BaseModel()
                 creation1 = bm.creation
                 update1 = bm.update
                 bm.save()
